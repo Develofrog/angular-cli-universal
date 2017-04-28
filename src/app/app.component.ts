@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TransferState } from '../../modules/transfer-state/transfer-state';
+import { TransferState } from './transfer-state/transfer-state';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class MainComponent implements OnInit {
+export class AppComponent implements OnInit {
   constructor(private transferState: TransferState) {}
 
   ngOnInit(): void {

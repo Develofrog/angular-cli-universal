@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppModule } from './app.module';
 import { BrowserTransferStateModule } from './transfer-state/browser-transfer-state.module';
 
-import { MainComponent } from '../components/main/main.component';
+import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { MainComponent } from '../components/main/main.component';
     AppModule
   ],
   bootstrap: [
-    MainComponent
+    AppComponent
   ]
 })
 export class AppBrowserModule { }

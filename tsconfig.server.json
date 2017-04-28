@@ -7,6 +7,6 @@
     "./src/main.server.aot.ts"
   ],
   "angularCompilerOptions": {
-    "entryModule": "./src/app/modules/app.server.module#AppServerModule"
+    "entryModule": "./src/app/app.server.module#AppServerModule"
   }
 }
