@@ -1,7 +1,8 @@
 const path = require("path");
 const ProgressPlugin = require("webpack/lib/ProgressPlugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const autoprefixer = require("autoprefixer");
+const postcssCssnext = require("postcss-cssnext")
+const postcssImport = require("postcss-import")
 const postcssUrl = require("postcss-url");
 const webpack = require("webpack");
 
@@ -168,7 +169,8 @@ module.exports = {
       "sourceMap": false,
       "options": {
         "postcss": [
-          autoprefixer(),
+          postcssImport(),
+          postcssCssnext(),
           postcssUrl({"url": (URL) => {
             // Only convert absolute URLs, which CSS-Loader won't process into require().
             if (!URL.startsWith("/")) {
